@@ -1,4 +1,90 @@
+
 *{
     border: 1px solid black;
     
 }
+
+@media (max-width: 767.98px) { 
+    #luck-profile-img{
+        height: 100%;
+        width: auto;
+    }
+    #luck-vertical-line-break{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    #luck-profile-img{
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width:575.98px){
+    
+}
+
+#luck-vertical-line-break{
+    border-right: 1px solid black;
+}
+
+.luck-circle{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.luck-btn{
+    border-radius: 5px;
+}
+
+#luck-contact-btn{
+    background-color: #ccdbdc;
+    border: none;
+}
+
+#luck-contact-btn:hover{
+    background-color: #9AD1D4;
+}
+
+#luck-aboutme-btn{
+    background-color: transparent;
+    border: #9AD1D4 1px solid;
+
+}
+
+#luck-aboutme-btn:hover{
+    background-color: #9AD1D4;
+}
+
+#luck-about-me{
+    position: relative;
+}
+
+#luck-about-me::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 2px;
+    top: 35px;
+    left: -10%;
+    background-color: black;
+}
+
+#luck-about-me::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    top: 45px;
+    left: 10%;
+    background-color: black;
+}
+
+.luck-p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+

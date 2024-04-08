@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- custom css link -->
     <link rel="stylesheet" href="./index.css">
@@ -19,20 +19,506 @@
 <body>
     
     <!-- intro section start -->
-    <div class="container-fluid vh-100 bg-danger-subtle p-5">
-        <div class="p-5 d-flex flex-sm-row align-items-center h-100 mx-auto flex-column">
-            <div class="p-5 w-100">
-                <span class="fs-5 fw-bold">Hello.</span>
-                <h2 class="fw-bold text-nowrap">I'm Min Khant Kyaw</h2>
-                <p class="text-center">A Full-Stack Web Developer</p>
-            </div>
-            <div class="p-0 mh-100 w-100">
-                <img src="./Images/profile.png" alt="" class="d-block mh-100 mw-100">
+    
+    <div class="container-fluid min-vh-100" id="luck-intro-section" >
+        <div class="container bg-light-subtle mx-auto mt-0 mt-md-5">
+            <div class="row align-items-center w-100 mx-auto flex-md-row-reverse">
+
+                <div class="col-md-1 d-md-block" style="display: none;"></div>
+
+                <div class="col-md-5 p-2">
+                    <div class="w-100 h-auto">
+                        <img src="./Images/profile.png" class="mx-auto d-block w-100" id="luck-profile-img">
+                    </div>
+                </div>
+
+                <div class="col-md-5 h-25">
+                    <div class="fs-5 mx-md-5 p-md-1 text-md-start text-center">Hello, I'm</div>
+                    <div class="h3 fw-bold text-center p-2 text-success">Min Khant Kyaw</div>
+                    <div class="h6 text-center p-1 m-1"><span class="text-danger">Photographer</span> & <span class="text-success-emphasis">Full-Stack Web Developer</span></div>
+                    
+                    <div class="row mx-auto my-2 px-1 justify-content-center align-items-center">
+
+                        <div class="col-md-6 d-flex align-items-center justify-content-md-end justify-content-center my-md-0 my-1">
+                            <a href="">
+                                <button type="button" id="luck-contact-btn" class="luck-btn">Contact me</button>
+                            </a>
+                        </div>
+                        
+                        <div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center my-md-0 my-1">
+                            <a href="">
+                                <button type="button" id="luck-aboutme-btn" class="luck-btn">About me</button>
+                            </a>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+                <div class="col-md-1 d-md-block" style="display: none;"></div>
+
+
             </div>
         </div>
     </div>
     
     <!-- intro section end -->
+
+    <!-- About me Section Start -->
+
+    <div class="container-fluid min-vh-100 mt-5 mt-md-0">
+
+        <div class="container mt-0 mt-md-3">
+
+            <div class="d-flex justify-content-center p-5">
+                <div class="d-inline fs-4" id="luck-about-me">About me</div>
+            </div>
+
+
+            <div class="container my-sm-5 px-sm-5 mt-4">  <!--This is about me texts-->
+                <p class="luck-p">
+                    <span class="fs-6 text-danger">&emsp;I'm Min Khant Kyaw.</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem reprehenderit atque nam, odit consequatur illum quibusdam vitae! Possimus cum, tempore molestiae vel est provident magni in, qui enim fuga vero! lorem
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md" id="luck-vertical-line-break">
+                    <div class="h5 text-center">Personal Detail</div>
+
+
+                    <div class="row d-sm-none"> <!--For Lowest width-->
+                        <div class="col col-3">
+                            <div class="list-group-item mt-2">DoB</div>
+                            <div class="list-group-item mt-2">Ph.No</div>
+                            <div class="list-group-item mt-2">Email</div>
+                            <div class="list-group-item mt-2">Address</div>
+                            <div class="list-group-item mt-2">Edu</div>
+                        </div>
+                        <div class="col col-9">
+                            <div class="list-group-item mt-2">13/12/2001</div>
+                            <div class="list-group-item mt-2">+959-751-340-010</div>
+                            <div class="list-group-item mt-2"><a href="minkhant.mk13@icloud.com" class="link-success link-opacity-75-hover">minkhant.mk13@icloud.com</a></div>
+                            <div class="list-group-item mt-2">Pyay,Bego,Myanmar</div>
+                            <div class="list-group-item mt-2">2nd Year Computer University</div>
+                        </div>
+                    </div>
+
+
+                    <div class="row d-sm-flex d-none">  <!--For sm size to up-->
+                        <div class="col">
+                            <div class="list-group-item mt-3">Date of Birth</div>
+                            <div class="list-group-item mt-3">Phone Number</div>
+                            <div class="list-group-item mt-3">Email</div>
+                            <div class="list-group-item mt-3">Address</div>
+                            <div class="list-group-item mt-3">Edu</div>
+                        </div>
+                        <div class="col">
+                            <div class="list-group-item mt-3">13/12/2001</div>
+                            <div class="list-group-item mt-3">+959-751-340-010</div>
+                            <div class="list-group-item mt-3"><a href="minkhant.mk13@icloud.com" class="link-success link-opacity-75-hover">minkhant.mk13@icloud.com</a></div>
+                            <div class="list-group-item mt-3">Pyay,Bego,Myanmar</div>
+                            <div class="list-group-item mt-3">2nd Year Computer University</div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="d-md-none mt-4">
+
+                <div class="col">
+                    <div class="h5 text-center">My Interest</div>
+
+                    <div class="row">
+                        <div class="col align-items-center">
+                            <div class="fs-1 text-center"><i class="fa fa-gamepad" aria-hidden="true"></i>                            </div>
+                            <div class="h5 text-center ">Gaming</div>
+                        </div>
+                        <div class="col align-items-center">
+                            <div class="fs-1 text-center"><i class="fa-solid fa-code"></i></div> 
+                            <div class="h5 text-center">Coding</div>
+                        </div>
+                        <div class="col align-items-center">
+                            <div class="fs-1 text-center"><i class="fa-solid fa-bug"></i></div>
+                            <div class="h5 text-center">Bug Fix</div>
+                        </div>
+                        <div class="col align-items-center">
+                            <div class="fs-1 text-center"><i class="fa-solid fa-camera"></i></div>
+                            <div class="h5 text-center">Photo</div>
+                        </div>
+                        <div class="col align-items-center">
+                            <div class="fs-1 text-center"><i class="fa-solid fa-film"></i></div>
+                            <div class="h5 text-center">Cinema</div>
+                        </div>
+                        <div class="col align-items-center">
+                            <div class="fs-1 text-center"><i class="fa-solid fa-mug-hot"></i></div>
+                            <div class="h5 text-center">Coffee</div>
+                        </div>
+                        <div class="col align-items-center">
+                            <div class="fs-1 text-center"><i class="fa-solid fa-plane"></i></div>
+                            <div class="h5 text-center">Travel</div>
+                        </div>
+                        <div class="col align-items-center">
+                            <div class="fs-1 text-center"><i class="fa-solid fa-users"></i></div>
+                            <div class="h5 text-center">Cooperation</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- About me Section End -->
+
+    <!-- Skill Set Section Start -->
+
+    <div class="min-vh-100 container-fluid bg-light">
+        <div class="container">
+
+            <div class="h2 text-center my-2 my-sm-5">Skill Sets</div>
+
+            <div class="container">
+                <div class="row my-3">
+
+                    <div class="">
+                        <div class="h5 text-decoration-underline">Languages</div>
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">HTML & CSS</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 79%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">JavaScript</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 73%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1 ">PHP</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 58%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">SQL</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 49%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="row my-3">
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">HTML & CSS</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 79%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">JavaScript</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 73%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1 ">PHP</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 58%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">SQL</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 49%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <hr class="my-2 my-sm-5">
+
+                <div class="row my-3">
+                    <div class="h5 text-decoration-underline">Frameworks</div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">Bootstrap</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 79%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">Vue</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 58%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">Laravel</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 40%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">MangoDB</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 78%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="row my-3">
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">Bootstrap</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 79%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">Vue</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 58%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">Laravel</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 40%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-sm-3 my-sm-2 my-3">
+                        <div class="mx-2 my-1">MangoDB</div>
+                        <div class="progress my-1" style="height: 0.4rem;">
+                            <div
+                                class="progress-bar"
+                                role="progressbar"
+                                style="width: 78%;"
+                                aria-valuenow="25"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Skill Set Section End -->
+
+    <!-- Project Section Start -->
+
+    <div class="container-fluid min-vh-100">
+        <div class="container">
+            <h2>Demo Projects</h2>
+            <div class="row justify-content-around">
+                <div class="col-sm-5">
+                    1
+                </div>
+
+                <div class="col-sm-5">
+                    2
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-sm-5">
+                    3
+                </div>
+
+                <div class="col-sm-5">
+                    4
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Section End -->
+
+    <!-- Contact Section Start -->
+
+    <div class="container-fluid min-vh-100">
+
+    </div>
+
+    <!--Contact Section End-->
+
 </body>
 
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
