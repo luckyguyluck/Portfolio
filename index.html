@@ -40,13 +40,13 @@
                     <div class="row mx-auto my-2 px-1 justify-content-center align-items-center">
 
                         <div class="col-md-6 d-flex align-items-center justify-content-md-end justify-content-center my-md-0 my-1">
-                            <a href="">
+                            <a href="#contact-section">
                                 <button type="button" id="luck-contact-btn" class="luck-btn">Contact me</button>
                             </a>
                         </div>
                         
                         <div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center my-md-0 my-1">
-                            <a href="">
+                            <a href="#about-me-section">
                                 <button type="button" id="luck-aboutme-btn" class="luck-btn">About me</button>
                             </a>
                         </div>
@@ -66,7 +66,7 @@
 
     <!-- About me Section Start -->
 
-    <div class="container-fluid min-vh-100 mt-5 mt-md-0">
+    <div class="container-fluid min-vh-100 mt-5 mt-md-0" id="about-me-section">
 
         <div class="container mt-0 mt-md-3">
 
@@ -513,71 +513,81 @@
 
     <!-- Contact Section Start -->
 
-    <div class="container-fluid min-vh-100">
+    <div class="container-fluid mb-5" id="contact-section">
         <div class="container">
             <div class="h2 text-center">Contact me</div>
-            <div class="row justify-content-around">  
-
-                <div class="col-sm-4 d-flex justify-content-center p-2"> <!--Location Box-->
-                    <div class="col-3">
-                        <ul class="luck-contact-ul">
-                            <li class="list-group luck-contact-list">Name</li>
-                            <li class="list-group luck-contact-list">Address</li>
-                            <li class="list-group luck-contact-list">Email</li>
-                            <li class="list-group luck-contact-list">Ph.No</li>
-                        </ul>
-                    </div>
-                    <div class="col-9">
-                        <ul class="luck-contact-ul">
-                            <li class="list-group luck-contact-list">Min Khant Kyaw</li>
-                            <li class="list-group luck-contact-list">Myanmar,Bego,Pyay</li>
-                            <li class="list-group luck-contact-list"><a href="mailto:minkhant.mk13@icloud.com" class="link-info link-offset-1-hover">minkhant.mk13@icloud.com</a></li>
-                            <li class="list-group luck-contact-list">+959-751-340-010</li>
-                        </ul>
+            <div class="mt-5 container d-flex justify-content-center">
+                <a href="https://www.facebook.com/iamaname/" class="link-opacity-75-hover link-primary mx-2 fs-3"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com/luckyguyluck" class="link-opacity-75-hover link-dark mx-2 fs-3"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/yagami_luck/" class="link-opacity-75-hover link-danger mx-2 fs-3"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://discord.com/users/516472034482585608" class="link-opacity-75-hover link-dark mx-2 fs-3"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://t.me/Luck_kun" class="link-opacity-75-hover link-primary mx-2 fs-3"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <div class="row mt-sm-5">
+                <div class="col-sm-6">
+                    <div class="h2 text-center">Address</div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="d-flex flex-column">
+                            <div class="text-end mx-3 fs-6 ">Name</div>
+                            <div class="text-end mx-3 fs-6 ">Email</div>
+                            <div class="text-end mx-3 fs-6 ">Ph.No</div>
+                            <div class="text-end mx-3 fs-6 ">Location</div>
+                        </div>
+                        <div>
+                            <div class="mx-2 fs-6 ">:</div>
+                            <div class="mx-2 fs-6 ">:</div>
+                            <div class="mx-2 fs-6 ">:</div>
+                            <div class="mx-2 fs-6 ">:</div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="text-start mx-1 fs-6 ">Min Khant Kyaw</div>
+                            <div class="text-start mx-1 fs-6 ">
+                                <a href="mailto:minkhant.mk13@icloud.com">
+                                    minkhant.mk13@icloud.com
+                                </a>
+                            </div>
+                            <div class="text-start mx-1 fs-6 ">+959-751-340-010</div>
+                            <div class="text-start mx-1 fs-6 ">Pyay,Bego,Myanmar</div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-sm-4 d-flex justify-content-center"> <!--Social Media Links-->
-                    <ul class="d-sm-block d-flex justify-content-around">
-                        <li class="list-group"><a href="https://www.facebook.com/iamaname/"><i class="fa-brands fa-square-facebook"></i><span class="d-sm-inline d-none">Facebook</span></a></li>
-                        <li class="list-group"><a href="https://www.instagram.com/yagami_luck/"><i class="fa-brands fa-square-instagram"></i><span class="d-sm-inline d-none">Instagram</span></a></li>
-                        <li class="list-group"><a href="https://github.com/luckyguyluck"><i class="fa-brands fa-square-github"></i><span class="d-sm-inline d-none">Github</span></a></li>
-                        <li class="list-group"><a href="https://t.me/Luck_kun"><i class="fa-brands fa-telegram"></i><span class="d-sm-inline d-none">Telegram</span></a></li>
-                    </ul>
-                    
-                </div> 
-
-                <div class="col-sm-4 d-flex justify-content-center"> <!--Mail send form-->
+                <div class="col-sm-6 px-5">
                     <form action="mailto:minkhant.mk13@icloud.com">
                         <div class="mb-3">
-                            <label for="" class="form-label">Email</label>
+                            <label for="email" class="form-label">Email</label>
                             <input
                                 type="email"
                                 class="form-control"
-                                name=""
-                                id=""
-                                aria-describedby="emailHelpId"
+                                name="sender-email"
+                                id="email"
                                 placeholder="abc@mail.com"
+                                required
                             />
-                            <div class="mb-3">
-                                <label for="form-content" class="form-label"></label>
-                                <textarea class="form-control" name="form-content" id="form-content" rows="3"></textarea>
-                            </div>
-                            
-                            <button
-                                type="submit"
-                                class="btn btn-primary"
-                            >
-                                submit
-                            </button>
-                            
-
                         </div>
+
+                        <div class="mb-3">
+                            <label for="mailcontent" class="form-label"></label>
+                            <textarea 
+                                class="form-control" 
+                                name="mailcontent" 
+                                id="mailcontent" 
+                                rows="5"
+                                required>
+                            </textarea>
+                        </div>
+                        
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Submit
+                        </button>
+                        
                         
                     </form>
                 </div>
-
             </div>
+            
         </div>
     </div>
 
